@@ -150,3 +150,14 @@ ul.extra-features i{font-size:38px;}
 .adCntnr .accCntnt {padding:40px 10px 10px 10px !important;}
 .accCntnt div:last-child a{visibility: hidden !important;}
 #habla_closebutton_a {display:none;}
+.ss-q-title:after{content: "*";color: #DA1F3C}
+.red-border{border: 1px solid red;}
+.help-block:before{content: "*";color: #DA1F3C; font-size:14px;}
+#formModal .modal-footer{border-top:none !important;}
+#formModal .modal-body .btn{width:100%;padding:10px}
+#formModal .ss-navigate .form-group{margin-bottom:0px !important}
+#formModal .modal-header{background:#DA1F3C}
+#formModal .modal-header h3,
+#formModal .modal-header .close{color:#FFFFFF}
+.display_show{display:block}
+.display_none{display:none}
