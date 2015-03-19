@@ -76,7 +76,6 @@ $.fn.goValidate = function() {
 		}else{
 			$('#thank_you').removeClass("display_none");
 			$('.form-horizontal').addClass("display_none");
-			_gaq.push(['_trackEvent', 'getstarted-form', 'clicked'])
 		}
 	});
 	return this;
