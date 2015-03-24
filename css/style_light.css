@@ -62,6 +62,8 @@ section{padding:20px 0;}
 .intro .intro-section h1{color:#fff;padding:50px 0;line-height:1.3em;}
 .intro .intro-section .btn-custom-border{opacity:0.7;color:#696969;}
 .intro .intro-slider .container .paddingtop .logo{width:1%;height:1%;}
+.intro .intro-slider h4{margin-bottom:2px !important;}
+.intro .intro-slider p{color:#696969;}
 a.mouse{background-image:url(../images/mouse.png);background-repeat:no-repeat;width:25px;height:38px;display:block;position:absolute;bottom:0px;left:50%;margin-left:-12px;}
 a.mouse i{position:relative;color:#fff;}
 .features{background:#F3F2F2;}
@@ -159,5 +161,7 @@ ul.extra-features i{font-size:38px;}
 #formModal .modal-header{background:#DA1F3C}
 #formModal .modal-header h3,
 #formModal .modal-header .close{color:#FFFFFF}
+#formModal .modal-footer .contact-us{font-size:18px}
 .display_show{display:block}
 .display_none{display:none}
+.center-textX {text-align: center;}

@@ -19,7 +19,6 @@
 		<script type="text/javascript">
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-45137706-1']);
-			// _gaq.push(['_setAccount', 'UA-60733299-2']);
 			_gaq.push(['_trackPageview']);
 
 			(function() {
@@ -83,11 +82,11 @@
 			.font-bold {
 				font-weight: bold;
 			}
-			.footer h6{
-				margin:20px auto 0 !important;
+			.footer h6 {
+				margin: 20px auto 0 !important;
 			}
-			.footer small{
-				
+			.footer small {
+
 			}
 
 			@media (max-width: 480px) {
@@ -131,7 +130,7 @@
 					<div class="col-md-12">
 						<div class=" about-us center-textX">
 							<p>
-								<b>#400</b> homes furnished last week, today its your turn!
+								<b>400</b> homes furnished last week, it's your turn now!
 							</p>
 						</div>
 					</div>
@@ -157,7 +156,7 @@
 						<div class="form-container center-marginX">
 
 							<p>
-								Lets get started !
+								Get, Set, Go!
 							</p>
 
 							<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
@@ -207,12 +206,13 @@
 									<div class="ss-item ss-navigate">
 										<div class="form-group text-center">
 											<input type="submit" class="btn btn-custom-border jfk-button-action" name="submit" id="ss-submit"
-											onclick="_gaq.push(['_trackEvent', 'subscriptionlp-form-submit', 'clicked'])">
+											onclick="_gaq.push(['_trackEvent', 'subscriptionlp-form-submit', 'clicked']);setKomlisrc();">
 											<p class="help-block text-danger hide" id="form-error">
 												Enter correct values.
 											</p>
 										</div>
 									</div>
+									
 								</ol>
 							</form>
 						</div>
@@ -241,39 +241,7 @@
 
 		<!-- end intro section -->
 
-		<!-- begin footer section -->
-
-		<footer class="footer" id="footer">
-
-			<div class="container">
-
-				<div class="row wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
-
-					<div class="col-md-12">
-						
-						<h6>Contact Us: 080-880-11-888 | customercare@furlenco.com</h6>
-
-					</div>
-
-				</div>
-
-				<div class="row wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
-
-					<div class="col-md-12 text-center">
-
-						<p>
-							<small>Copyright &copy; 2015 Kieraya Furnishing Solutions pvt ltd</small>
-						</p>
-
-					</div>
-
-				</div>
-
-			</div>
-
-		</footer>
-
-		<!-- end footer section -->
+		<iframe src="" height="1" width="1" frameborder="0" id="komli"></iframe>
 
 		<!-- Modal -->
 		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -314,6 +282,33 @@
 		<script src="js/main.js" ></script>
 
 		<script src="js/formvalidation.js" defer></script>
+
+		<script>
+			function setKomlisrc() {
+				var komliSrc = "http://secure.komli.com/p.ashx?o=516&t=mobileno,emailid,uniqueid";
+				var komliFrame = $("#komli");
+				var phone = $('.phone').val();
+				var email = $('#entry_1877523335').val();
+				komliFrame.attr("src", komliSrc.replace("mobileno", phone).replace("emailid", email));
+			}
+
+			function getCookie(cname) {
+				var name = cname + "=";
+				var ca = document.cookie.split(';');
+				for (var i = 0; i < ca.length; i++) {
+					var c = ca[i];
+					while (c.charAt(0) == ' ')
+					c = c.substring(1);
+					if (c.indexOf(name) == 0)
+						return c.substring(name.length, c.length);
+				}
+				return "";
+			}
+			
+			var gaUtmCookie = getCookie("__utmz");
+			gaUtmCookie = gaUtmCookie.slice(gaUtmCookie.indexOf("utmcsr"));
+			gaUtmCookie = gaUtmCookie.replace("utmcsr","Campaign Source").replace("utmccn","Campaign Name").replace("utmcmd", "Campaign Medium");
+		</script>
 
 	</body>
 
