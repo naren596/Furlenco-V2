@@ -76,6 +76,11 @@ $.fn.goValidate = function() {
 		}else{
 			$('#thank_you').removeClass("display_none");
 			$('.form-horizontal').addClass("display_none");
+			$('.contact-us').addClass("display_none");
+			var conversioniFrame = $('<iframe/>');
+			conversioniFrame.attr("src","conversion.html");
+			conversioniFrame.css("display","none");
+			conversioniFrame.appendTo("body");
 		}
 	});
 	return this;
@@ -86,6 +91,7 @@ $(document).ready(function(){
 	$(".btn-enquire").click(function(){
 		$('#thank_you').addClass("display_none");
 		$('.form-horizontal').removeClass("display_none");
+		$('.contact-us').removeClass("display_none");
 	});
 });
 
