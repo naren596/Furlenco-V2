@@ -57,7 +57,7 @@ section{padding:20px 0;}
 .navbar{min-height:80px;background-color:#fff;border:none;-webkit-box-shadow:0 1px 5px rgba(0, 0, 0, 0.15);-moz-box-shadow:0 1px 5px rgba(0, 0, 0, 0.15);box-shadow:0 1px 5px rgba(0, 0, 0, 0.15);-webkit-transition:all .15s linear;-moz-transition:all .15s linear;-ms-transition:all .15s linear;-o-transition:all .15s linear;transition:all .15s linear;animation-name:slideUp;-webkit-animation-name:slideUp;opacity:0;margin-top:-80px;margin-bottom:0px;}
 .fixednav{opacity:1;animation-name:slideDown;-webkit-animation-name:slideDown;animation-duration:0.5s;-webkit-animation-duration:0.5s;margin-top:0px;}
 .navbar-default .navbar-nav > li > a{font-size:14px;font-weight:bold;color:#282828;padding-top:30px;padding-bottom:30px;}
-.intro{background-image:url(../images/furlencoImages/hero_image_new.jpg);background-attachment:fixed;-webkit-background-size:contain;background-size:contain;}
+.intro{background-image:url(../images/furlencoImages/hero_image_image1.jpg);background-attachment:fixed;-webkit-background-size:contain;background-size:contain;}
 .intro .intro-section{max-width:675px;padding:130px 0;margin:0 auto;text-align:center;}
 .intro .intro-section h1{color:#fff;padding:50px 0;line-height:1.3em;}
 .intro .intro-section .btn-custom-border{opacity:0.7;color:#696969;}
