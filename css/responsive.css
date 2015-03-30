@@ -114,5 +114,5 @@ ul.extra-features{max-width:100%}
 .small-slider .item img{height:250px}
 .package-features-bhk{display:none}
 .footer h6{font-size:14px}
-.olrk-noquirks{display:none}
+.olrk-noquirks, .btn-benefits, .btn-howitworks, .btn-subscription{display:none}
 }

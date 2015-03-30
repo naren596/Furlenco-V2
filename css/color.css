@@ -3,7 +3,7 @@
 .nav-tabs>li.active>a:hover,
 .nav-tabs>li.active>a:focus{background-color:#696969;border:1px solid #696969}
 .btn-custom{border-color:#696969;background-color:#696969}
-.btn-custom-border{background:#696969;border-color:#696969;color:#ffffff}
+.btn-custom-border{background:#696969;border-color:#696969;color:#FFFFFF}
 .features .feature .icon-container .icon{border:1px solid #da1f3c}
 .btn-send,
 .newsletter input{border:1px solid #ffffff}
@@ -12,7 +12,7 @@
 .navbar-default .navbar-toggle{background-color:#DA1F3C}
 .fa-bars{color:#FFFFFF;}
 .btn-custom:hover,
-.btn-custom-border:hover{background-color:#C6C8C8;border-color:#C6C8C8}
+.btn-custom-border:hover{background-color:#DA1F3C;border-color:#DA1F3C;color:#FFFFFF}
 .btn-slide:hover{opacity:0.7;background-color:#696969;border-color:#696969}
 .footer span.jobs{background-color:#696969}
 .btn-slide{opacity:0.5;background-color:#696969}

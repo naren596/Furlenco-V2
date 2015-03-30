@@ -109,7 +109,7 @@ a.mouse i{position:relative;color:#fff;}
 .packages .package .package-price{font-size:30px;font-weight:300;display:block;}
 .packages .package .package-features ul li{margin:15px 0;}
 .packages .package .package-features .package-seperator{display:none;}
-.packages .btn{margin-top:10px;width:208px;}
+.packages .btn{margin-top:10px;}
 ul.extra-features{max-width:470px;margin-top:50px;}
 ul.extra-features li{display:inline-block;margin-bottom:20px;}
 ul.extra-features .icon{width:55px;height:55px;margin-right:10px;float:left;text-align:center;}

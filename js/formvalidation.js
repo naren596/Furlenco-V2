@@ -78,6 +78,7 @@ $.fn.goValidate = function() {
 			$('.form-horizontal').addClass("display_none");
 			$('.contact-us').addClass("display_none");
 			var conversioniFrame = $('<iframe/>');
+			conversioniFrame.attr("id","conversioniFrame");
 			conversioniFrame.attr("src","conversion.html");
 			conversioniFrame.css("display","none");
 			conversioniFrame.appendTo("body");
@@ -92,6 +93,7 @@ $(document).ready(function(){
 		$('#thank_you').addClass("display_none");
 		$('.form-horizontal').removeClass("display_none");
 		$('.contact-us').removeClass("display_none");
+		$('#conversioniFrame').remove();
 	});
 });
 
