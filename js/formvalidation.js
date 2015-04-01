@@ -82,6 +82,8 @@ $.fn.goValidate = function() {
 			conversioniFrame.attr("src","conversion.html");
 			conversioniFrame.css("display","none");
 			conversioniFrame.appendTo("body");
+//			$('#to_number').val($('.phone').val());
+//			$('.exotel-form').removeClass('display_none');
 		}
 	});
 	return this;
@@ -94,6 +96,23 @@ $(document).ready(function(){
 		$('.form-horizontal').removeClass("display_none");
 		$('.contact-us').removeClass("display_none");
 		$('#conversioniFrame').remove();
+//		$('.exotel-form').addClass('display_none');
 	});
+	lpCarouselImage();
+//	$('#exotel_submit').click(function(){
+//		$('#formModal').modal('hide');
+//	});
 });
+
+$(window).resize(function(){
+	lpCarouselImage();
+});
+
+function lpCarouselImage() {
+    $("#lpCarousel img").each($(window).width() <= 480 ? function() {
+        $(this).attr("src").match("_m.jpg") || $(this).attr("src", $(this).attr("src").replace(".jpg", "_m.jpg"))
+    } : function() {
+        $(this).attr("src", $(this).attr("src").replace("_m.jpg", ".jpg"))
+    })
+}
 
